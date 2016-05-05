@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dillon Drawing</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" >
+<script src="js/base.min.js"></script><!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+</head>
+<body>
+
+	<header>
+		<a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+		<ul class="menu">
+			<li><a href="music.html">MUSIC</a></li>
+			<li><a href="drawing.html">DRAWING</a></li>
+			<li><a href="video.html">VIDEO</a></li>
+			<li><a href="writing.html">WRITING</a></li>
+		</ul>
+	</header>
+
+		<ul id="drawing_items">
+			<li><a href="illustrations.html">ILLUSTRATIONS</a></li>
+			<li><a href="posters.html">POSTERS</a></li>
+			<li><a href="stills.html">ANIMATION STILLS</a></li>
+			<li><a href="comics.html">COMICS</a></li>
+		</ul>
+	
+	
+	<div id="drawing_wrapper">
+
+		
+		
+	</div><!--end home wrapper-->
+
+	<footer>
+		
+	</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="js/plugins.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/improved.js"></script>
+<script>
+$(document).ready(function(e) {
+
+var $drawing = $('#drawing_items');
+
+$('#drawing_items').find('a').on('click', function(e){
+	e.preventDefault();
+
+	var $desc = $('#drawing_wrapper');
+
+	switch ($(this).attr('href')) {
+		case 'illustrations.html' :
+			$desc.load('fragments/illustrations.html');
+			break;
+		case 'posters.html' :
+			$desc.load('fragments/posters.html');
+			break;
+		case 'stills.html' :
+			$desc.load('fragments/stills.html');
+			break;
+		case 'comics.html' :
+			$desc.load('fragments/comics.html');
+			break;			
+	}
+
+});
+
+
+});
+
+</script>
+</body>
+</html>

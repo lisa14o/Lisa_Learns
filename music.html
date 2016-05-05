@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lisa Learns!</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" >
+<link href="css/media.css" rel="stylesheet" type="text/css" >
+<script src="js/nav_hightlight.js"></script>
+<script src="js/base.min.js"></script>
+<script src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+
+<header>
+	<a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+	<ul class="menu">
+		<li><a href="css.html">CSS</a></li>
+		<li><a href="html.html">HTML</a></li>
+		<li><a href="javascript.html">JavaScript</a></li>
+		<li><a href="misc.html">Misc</a></li>
+	</ul>
+</header>
+
+	<ul id="sub_items">
+		<li><a href="basics.html">Basics</a></li>
+		<li><a href="position.html">Position</a></li>
+		<li><a href="mpe.html">Margins, Padding, etc.</a></li>
+		<li><a href="responsive.html">Responsive</a></li>
+	</ul>
+	
+<div id="inner_wrapper">
+	<div class="facts">
+		
+		<div class="fact">
+			<h2>Sticky Footer</h2>
+			<img src="images/footer.png" alt="footer">
+		</div>
+		<div class="fact">
+			<span><h2>Sticky Footer</h2></span>
+			<img src="images/footer.png" alt="footer">
+		</div>
+		<div class="fact">
+			<span><h2>Sticky Footer</h2></span>
+			<img src="images/footer.png" alt="footer">
+		</div>
+		<div class="fact">
+			<span><h2>Sticky Footer</h2></span>
+			<img src="images/footer.png" alt="footer">
+		</div>
+		
+	</div><!--end fact-->
+
+</div><!--end home wrapper-->
+
+<footer>
+	<p>something goes here</p>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="js/plugins.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/improved.js"></script>
+<script>
+$(document).ready(function(e) {
+//$(document).bind('pageinit', function(){
+var $drawing = $('#sub_items');
+
+$('#sub_items').find('a').on('click', function(e){
+	e.preventDefault();
+
+	var $desc = $('#inner_wrapper');
+
+	switch ($(this).attr('href')) {
+		case 'john_dillon.html' :
+			$desc.load('fragments/john_dillon.html');
+			break;
+		case 'other_music.html' :
+			$desc.load('fragments/other_music.html');
+			break;
+	}
+
+});
+
+
+});
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dillon's Music</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" >
+<link href="css/media.css" rel="stylesheet" type="text/css" >
+<script src="js/base.min.js"></script>
+<script src="js/nav_hightlight.js"></script>
+<script src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+		
+			<ul class="menu">
+				<li><a href="music.html">MUSIC</a></li>
+				<li><a href="drawing.html">DRAWING</a></li>
+				<li><a href="video.html">VIDEO</a></li>
+				<li><a href="writing.html">WRITING</a></li>
+			</ul>
+
+	</header>
+
+
+		<ul id="sub_items">
+			<li class="highlight"><a href="illustrations.html">ILLUSTRATIONS</a></li>
+			<li><a href="posters.html">POSTERS</a></li>
+			<li><a href="stills.html">ANIMATION STILLS</a></li>
+			<li><a href="comics.html">COMICS</a></li>
+		</ul>
+	
+	
+	<div id="inner_wrapper">
+
+<div class="inner_about">
+	<h1>ILLUSTRATIONS</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu odio pretium, viverra tellus vitae, tristique nunc. Fusce ligula tortor, tempus tempus vehicula nec, viverra eu erat. Donec pellentesque ut elit ac laoreet. Aenean hendrerit ligula interdum dolor maximus sagittis. Aliquam rhoncus sapien arcu, et vehicula lorem rutrum feugiat. Nulla mattis orci nec ultricies molestie. Aliquam feugiat facilisis est vel vulputate. Aliquam eleifend tortor ac neque lacinia porttitor. Vivamus lacinia dapibus justo, ac eleifoend ipsum tristique nec. Fusce molestie arcu sed viverra egestas.</p>
+</div><!--end inner about-->
+
+<div class="rows">
+<div class="row_four flex1"><img src="images/hiking.jpg" alt="hiking"></div>
+<div class="row_four flex2"><img src="images/robots.jpg" alt="robots"></div>
+<div class="row_four flex3"><img src="images/cat_lion.jpg" alt="lion"></div>
+<div class="row_four flex4"><img src="images/magician.jpg" alt="magic"></div>
+</div>
+<div class="big_one flex4"><img src="images/magician.jpg" alt="magic"></div>
+
+<div class="row_two flex4"><img src="images/small_bike.jpg" alt="bike"></div>
+<div class="row_two flexx"><img src="images/cat_lion.jpg" alt="lion"></div>
+
+<div class="stack">
+	<div class="two_stack flex1"><img src="images/cat_lion.jpg" alt="lion"></div>
+	<div class="two_stack flex4"><img src="images/magician.jpg" alt="magic"></div>
+</div><!--end  stack-->
+
+<div class="stack">
+	<div class="two_stack flex3"><img src="images/cat_lion.jpg" alt="lion"></div>
+	<div class="two_stack flex2"><img src="images/magician.jpg" alt="magic"></div>
+</div><!--end  stack-->
+
+<div class="rows">
+<div class="row_four flex1"><img src="images/hiking.jpg" alt="hiking"></div>
+<div class="row_four flex2"><img src="images/robots.jpg" alt="robots"></div>
+<div class="row_four flex3"><img src="images/cat_lion.jpg" alt="lion"></div>
+<div class="row_four flex4"><img src="images/magician.jpg" alt="magic"></div>
+</div>
+<div class="big_one flex4"><img src="images/magician.jpg" alt="magic"></div>
+
+
+	</div><!--end home wrapper-->
+
+	<footer>
+		
+	</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="js/plugins.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/improved.js"></script>
+<script>
+$(document).ready(function(e) {
+
+var $drawing = $('#sub_items');
+
+$('#sub_items').find('a').on('click', function(e){
+	e.preventDefault();
+
+	var $desc = $('#inner_wrapper');
+
+	switch ($(this).attr('href')) {
+		case 'illustrations.html' :
+			$desc.load('fragments/illustrations.html');
+			break;
+		case 'posters.html' :
+			$desc.load('fragments/posters.html');
+			break;
+		case 'stills.html' :
+			$desc.load('fragments/stills.html');
+			break;
+		case 'comics.html' :
+			$desc.load('fragments/comics.html');
+			break;
+	}
+
+});
+
+
+});
+</script>
+</body>
+</html>

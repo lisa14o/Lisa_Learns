@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lisa Learns!</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" >
+<link href="css/media.css" rel="stylesheet" type="text/css" >
+<link href='https://fonts.googleapis.com/css?family=Signika:400,300,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="http://www.lisa14o.com/study/images/thumbs.png" sizes="16x16">
+<script src="js/nav_hightlight.js"></script>
+<script src="js/base.min.js"></script>
+<script src="js/script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+
+<header>
+	<a href="index.html"><img  class="logo" src="images/lisa_learns_logo.jpg" alt="logo"></a>
+	<ul class="menu">
+		<li><a class="here" href="css.html">CSS</a></li>
+		<li><a href="html.html">HTML</a></li>
+		<li><a href="javascript.html">JavaScript</a></li>
+		<li><a href="misc.html">Misc</a></li>
+	</ul>
+</header>
+
+	<ul id="sub_items">
+		<li><a href="basics.html">Basics</a></li>
+		<li><a href="position.html">Position</a></li>
+		<li><a href="box.html">Box Model</a></li>
+		<li class="here_now"><a href="responsive.html">Responsive</a></li>
+		<li><a href="flexbox.html">Flexbox</a></li>
+	</ul>
+	
+<div id="inner_wrapper">
+	<h1>Flex Box</h1>
+	<div class="facts">
+		<h2>Flex Direction and Align/Justify</h2>
+		<div class="align">
+			<div class="fact">
+				<h3>flex-direction: row;</h3>
+				<img src="images/default_flex.jpg" alt="default flexbox behavior">
+				<span>Main axis is horizontal, items flow in a row. </span> 
+				<p>*this is the default setting</p>
+			</div><!--end fact-->
+			<div class="fact">
+				<h3>flex-direction: column;</h3>
+				<img src="images/column_flexbox.jpg" alt="column flexbox">
+				<span>Main axis is vertical, items flow in a column</span> 
+			</div><!--end fact-->
+			<div class="fact">
+				<h3>justify-content: flex-end;</h3>
+				<img src="images/flexbox_right_row.jpg" alt="flexbox row right">
+			</div><!--end fact-->
+			<div class="fact">
+				<h3>align-items: flex-end;</h3>
+				<img src="images/flexbox_right_column.jpg" alt="flexbox column right">
+			</div><!--end fact-->
+		</div><!--end align-->	
+		<h2>Visual Guide to Flexbox</h2>
+		<div class="facts_big">
+			<div class="fact_big">
+				<img src="images/flexbox_layout.png" alt="layout">
+			</div><!--end big facts-->
+		</div><!--end facts big-->
+		<h2>How To Center With Flexbox</h2>
+		<div class="facts_half">
+			<div class="fact_half">
+				<h3>justify-content: center;</h3>
+				<img src="images/flexbox_center_row.jpg" alt="flexbox row right">
+			</div><!--end facts half-->	
+			<div class="fact_half">
+				<h3>align-items: center;</h3>
+				<img src="images/flexbox_center_column.jpg" alt="flexbox column right">
+			</div><!--end half fact-->
+		</div><!--end half fact-->
+		
+		
+	</div><!--end fact-->
+
+</div><!--end home wrapper-->
+
+<footer>
+	<a href="http://www.lisa14o.com/" target="_blank">Lisa Fortino 2016</a>
+	<div class="social">
+		<a href="https://www.linkedin.com/in/lisafortino" target="_blank"><img src="images/pink_linkedin.jpg" alt="LinkedIn"></a>
+		<a href="https://github.com/lisa14o" target="_blank"><img src="images/pink_github.jpg" alt="GitHub"></a>
+		<a href="https://www.facebook.com/LisaFortino" target="_blank"><img src="images/pink_facebook.jpg" alt="Facebook"></a>
+		<a href="https://www.instagram.com/lisassy4tiny/" target="_blank"><img src="images/pink_instagram.jpg" alt="Instagram"></a>
+	</div><!--end social-->
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')</script>
+<script src="js/plugins.min.js"></script>
+<script src="js/all.js"></script>
+<script src="js/improved.js"></script>
+<script>
+$(document).ready(function(e) {
+//$(document).bind('pageinit', function(){
+var $drawing = $('#sub_items');
+
+$('#sub_items').find('a').on('click', function(e){
+	e.preventDefault();
+
+	var $desc = $('#inner_wrapper');
+
+	switch ($(this).attr('href')) {
+		case 'john_dillon.html' :
+			$desc.load('fragments/john_dillon.html');
+			break;
+		case 'other_music.html' :
+			$desc.load('fragments/other_music.html');
+			break;
+	}
+
+});
+
+
+});
+
+
+</script>
+
+</body>
+</html>

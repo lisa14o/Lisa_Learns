@@ -1,0 +1,175 @@
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 90%;
+		line-height: 140%;
+	}
+
+	header {
+		height: 50px;
+		padding: 5px;
+	}
+
+	img.logo {
+		height: 40px;
+	}
+
+	ul.menu {
+		width: 100%;
+		margin-top: 30px;
+		font-size: .6em;
+	}
+
+	ul.menu li {
+	text-align: center;
+	width: 24%;
+	list-style-type: none;
+}
+
+	ul#sub_items {
+		height: 35px;
+		font-size: .7em;
+	}
+	
+	ul#sub_items li a {
+		width: 80px;
+		height: 35px;
+	}
+
+	.home_wrapper {
+		width: 96%;
+		margin: 1em auto;
+	}
+
+	#inner_wrapper {
+		width: 95%;
+		margin: 1em auto;
+		padding: 10px 0 10px 0;
+	}
+
+	.fact {
+		width: 45%;
+	}
+
+	.stack {
+		width: 23.5%;
+	}
+
+	.two_stack {
+		width: 98%;
+		margin-top: .5em;
+	}
+
+	.row_two {
+		width: 48%;
+		margin-top: .5em;
+	}
+
+	.stack {
+		display: none;
+	}
+
+	.flexx {
+		display: block;
+	}
+
+	.row_four {
+		width: 31%;
+		margin-top: .5em;
+	}
+
+	.row_four:last-of-type {
+		display: none;
+	}
+
+	.big_one {
+		display: block;
+		width: 100%;
+		margin-top: .5em;
+	}
+
+	.big_two {
+		display: block;
+		width: 100%;
+		margin-top: .5em;
+	}
+
+	.rows:last-of-type {
+		margin-top:  0;
+	}
+
+	.posters {
+		width: 80%;
+		margin-top: 2em;
+	}
+
+	.one_poster img {
+		width: 100%;
+	}
+
+	.still {
+		margin-top: .5em;
+	}
+
+	.film_top {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.film_desc {
+		width: 99%;
+		padding-top: 0em;
+		margin: auto;
+	}
+
+	.side_img {
+		width: 99%;
+		margin-top: .5em;
+	}
+
+	.album_art {
+		width: 100%;
+	}
+
+	.side_songs {
+		width: 100%;
+	}
+
+	.video {
+		margin-top: 1em;
+		height: 300px;
+	}
+
+	iframe {
+		height: 300px;
+	}
+
+	.essay {
+		width: 90%;
+		margin: 1em auto 1.5em auto;
+	}
+	.essay p {
+		padding-top: .7em;
+	}
+
+	.row_two {
+		width: 100%;
+	}
+
+	p.excerpt {
+		width: 95%;
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	#inner_wrapper {
+		width: 98%;
+	}
+
+	.home_wrapper {
+		width: 98%;
+	}
+
+}
